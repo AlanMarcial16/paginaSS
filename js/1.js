@@ -1,4 +1,4 @@
-// Script to open and close sidebar
+// Este script es para el funcionamiento del grid de imágenes
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
     document.getElementById("myOverlay").style.display = "block";
