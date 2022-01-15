@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Suelo - Laboratorio de Química y Biocombustibles BUAP</title>
+<title>Balance de Materia - Laboratorio de Química y Biocombustibles BUAP</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/estilo1.css">
@@ -42,7 +42,7 @@
     <a href="index.html"><img src="img/logo.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
-    <h1><b>SUELO Y SUS DERIVADOS</b></h1> <!--Cambio del día 1 de octubre-->
+    <h1><b>Balance de Materia</b></h1> <!--Cambio del día 1 de octubre-->
     <div class="w3-section w3-bottombar w3-padding-16">
     </div>
     </div>
@@ -50,60 +50,134 @@
 
   <div class="w3-row-padding w3-padding-16">
     <div class="w3-col m6">
-      <img src="https://www.gestiriego.com/wp-content/uploads/2018/05/CURIOSIDADES-SEL-SUELO-.jpg" alt="Me" style="width:100%">
+      <img src="https://dev-res.thumbr.io/libraries/79/78/32/01/lib/1612259072722_1.jpg?size=854x493s&ext=jpg" alt="Me" style="width:100%">
     </div>
     <div class="w3-col m6">
-      <img src="https://encolombia.com/wp-content/uploads/2020/06/Conservaci%C3%B3n-del-Suelo.jpg" alt="Me" style="width:100%">
+      <img src="https://www.industriaquimica.net/sites/industriaquimica.net/files/ingenieria-quimica/fundamentos/balances-materia/evaporador-cristalizador.png" alt="Me" style="width:125%">
     </div>
   </div>
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-    <p class="p">El suelo es la capa superior de la Tierra, es una mezcla homogénea que está compuesta de sólidos, líquidos y gases. En él se desarrolla
-        vida vegetal y animal, además, se encarga de proteger al medio ambiente y de mantener el equilibrio entre los ecosistemas, ya que funciona como un 
-        filtro para retener ciertas sustancias que pueden ser nocivas para posteriormente, poder transformarlas en otros compuestos no dañinos.
-    </p>
-    <br>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="horizontes">
     <p class="p">
-        De igual forma se encarga de transformar compuestos orgánicos al descomponerlos para que estos puedan ser aprovechados por los microorganismos 
-        presentes en él, haciendo posible que se lleven a cabo ciertos ciclos biogeoquímicos del planeta.
+        Para poder comprender en su totalidad qué es un balance de materia, primero se deben tener
+        bien definidos dos conceptos:
     </p>
-    <hr>
-  
-  <div class="w3-row-padding">
-    <p class="p1">Los compuestos presentes en el suelo son:</p>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <a href=""><img src="https://ingeoexpert.com/wp-content/uploads/2018/05/nuevos-minerales.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-        <p><b>Minerales</b></p>
-        <p>Provenientes de la roca madre al irse fragmentando con el paso del tiempo.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <a href=""><img src="https://www.gaceta.unam.mx/wp-content/uploads/2020/05/200518-aca2-des-f1-materia-organica.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-        <p><b>Materia orgánica</b></p>
-        <p>Que es el producto de la descomposición de animales o vegetación presentes en el suelo.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <a href=""><img src="https://storage.googleapis.com/portalfruticola/2016/02/9c5f8d79-zvxcvxvxcvxvxcv.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-        <p><b>Microorganismos</b></p>
-        <p>Que se encargan de despedazar o descomponer la materia orgánica para que sea posible la absorción 
-            de nutrientes por el suelo y la vegetación que crece en él.
-        </p>
-      </div>
-    </div>
+    <ul>
+        <li class="li">Sistema: es el conjunto de componentes que interactúan de manera conjunta para
+            poder cumplir con un objetivo, es decir, es la zona de estudio de un problema. Un
+            sistema puede presentar límites (fronteras) físicos o abstractos (relacionados con
+            biología, química, etc.) y existen tres tipos:</li>
+            <ul>
+                <li class="li">Sistema abierto: es aquel en el que la materia puede transferirse a través de la
+                    frontera del sistema, es decir, puede entrar y salir de él.</li>
+                <li class="li">Sistema cerrado: es aquel en el que no es posible la transferencia de materia
+                    a través de la frontera del sistema, sin embargo, puede haber intercambios de
+                    energía a través de ella.</li>
+                <li class="li">Sistema aislado: como su nombre lo indica, se trata de un sistema que se
+                    encuentra completamente aislado del exterior y, por lo tanto, no puede haber
+                    intercambios de materia ni energía.</li>
+            </ul>
+        <br>
+        <li class="li">
+            Por otro lado, los sistemas también pueden clasificarse en sistemas de estado
+            estacionario y transitorio. Los de estado estacionario no permiten que haya una
+            acumulación de materia, por lo que todo lo que entra en el sistema sale de él. Mientras
+            que en el de estado transitorio sí permite que ocurra esta acumulación.
+        </li>
+        <br>
+    </ul>
+    
+    <p class="p">
+        Ahora que se tienen claros dichos conceptos, es posible comprender mejor qué es y cómo
+        funciona un balance de materia.
+    </p>
+
+    <p class="p">
+        El balance de materia es un método que sirve para poder contabilizar con exactitud cada uno
+        de los elementos que entran, salen, se acumulan o se agotan en un determinado proceso, para
+        esto, se toma en cuenta los límites del sistema y las distintas operaciones que lo integran.
+        Está basado en la ley de la conservación de la materia, que establece que la materia que
+        ingresa a un sistema cerrado siempre permanecerá constante, es decir, la masa que entra en
+        un sistema debe salir o acumularse en él.
+    </p>
+
+    <p class="p">
+        Es importante mencionar que lo anterior no puede ser aplicado en todos los procesos que se
+        quieran analizar, ya que si se trata de un reactor nuclear habría una transformación de la
+        materia en energía o viceversa.
+    </p>
   </div>
-  <br>
-  <br>
+
   
 <!-- Horizontes del suelo -->
     <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="horizontes">
-      <h1>Horizontes del suelo</h1>
-      <p class="p">El suelo es el resultado de la interacción de diversos procesos de transformación y alteración, dichos procesos hacen que los diferentes
-        elementos que conforman al suelo se vayan distribuyendo en diferentes horizontes y que formen el perfil del suelo, el cual es un conjunto de capas
-        donde cada una presentará distintas características.
+      <h1>Tipos de balances de materia</h1>
+      <p class="p">
+        Los balances de materia son fundamentales en el diseño de procesos, debido a que con ellos
+        se pueden determinar las cantidades de materia prima necesarias para obtener un determinado
+        producto en un proceso. Para esto es necesario determinar qué tipo de balance se necesita,
+        los tipos de balance son:
       </p>
+
+      <ul>
+        <li class="li">
+            Balance total de materia: se analiza la materia total de cada corriente que ingresa o
+            sale del sistema, es decir, solo se considera la masa total de cada corriente que entra
+            o sale. Para esto se hace uso de la ecuación 𝐸𝑛𝑡𝑟𝑎𝑑𝑎 = 𝑆𝑎𝑙𝑖𝑑𝑎 + 𝐴𝑐𝑢𝑚𝑢𝑙𝑎𝑐𝑖ó𝑛. Por ejemplo, para el siguiente diagrama se tendría la ecuación 𝑚𝑑 = 𝑚𝑎 +
+            𝑚𝑐.
+        </li>
+        <br>
+        <div align="center">
+            <img src="img/img11.png" style="width:75%">
+        </div>
+        <br>
+        <li class="li">
+            Balance de materia por componentes: cuando en un sistema se tiene variables que se
+            desconocen, además de tener la ecuación del balance total, es necesario establecer
+            ecuaciones para cada componente que interviene en el sistema, de esta manera al
+            resolver las ecuaciones se pueda determinas dichas incógnitas. Por lo general, en este
+            tipo de problemas algunas cantidades de las corrientes que intervienen en el sistema
+            están expresadas por medio de fracciones o porcentajes, además, se considerará el
+            caudal másico de cada componente (kg/s). Por ejemplo, para el caso del diagrama de
+            la figura 9, se tiene componentes sólidos y agua presentes en una disolución, los
+            cuales están expresados en porcentajes, por lo que para sus ecuaciones se emplearan
+            fracciones másicas. Por lo tanto, las ecuaciones que tendrá dicho sistema son:
+        </li>
+            <ul>
+                <li class="li">
+                    Balance global: 𝑚𝑑 = 𝑚𝑎 + 𝑚𝑐.
+                </li>
+                <li class="li">
+                    Balance de sólidos: 𝑚𝑑 ∙ 𝑋𝑑𝑖𝑙𝑢𝑐𝑖ó𝑛,𝑠ó𝑙𝑖𝑑𝑜𝑠 = 𝑚𝑐∙𝑋𝑐𝑜𝑛𝑐𝑒𝑛𝑡𝑟𝑎𝑑𝑜,𝑠𝑜𝑙𝑖𝑑𝑜𝑠.
+                </li>
+                <li class="li">
+                    Balance de agua: 𝑚𝑑 ∙ 𝑋𝑑𝑖𝑙𝑢𝑐𝑖ó𝑛,𝑎𝑔𝑢𝑎 = 𝑚𝑐∙𝑋𝑐𝑜𝑛𝑐𝑒𝑛𝑡𝑟𝑎𝑑𝑜,𝑎𝑔𝑢𝑎.
+                </li>
+            </ul>
+        <br>
+        <li class="li">
+            La solución de dichas ecuaciones quedará de la siguiente manera:
+        </li>
+            <ul>
+                <li class="li">
+                    Balance de sólidos
+                </li>
+                <div align="center">
+                    <img src="img/img12.png" style="width:75%">
+                </div>
+                <br>
+                <li class="li">
+                    Balance de agua
+                </li>
+                <div align="center">
+                    <img src="img/img13.png" style="width:75%">
+                </div>
+                <div align="center">
+                    <img src="img/img14.png" style="width:75%">
+                </div>
+            </ul>
+        <br>
+    </ul>
     </div>
 
     <div class="w3-row-padding w3-margin-top">
@@ -176,7 +250,8 @@
  <!-- Tipos de suelo -->
  <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="tipos">
   <h1>Tipos de suelo</h1>
-  <p class="p">El suelo está conformado de diferentes tamaño de partículas minerales que determina
+  <p class="p">
+    El suelo está conformado de diferentes tamaño de partículas minerales que determina
     propiedades físicas como la textura, la porosidad y el color. Según su textura, se tienen tres
     tipos de suelos:
 </div>
@@ -392,9 +467,9 @@
   <h3>Capacidad de intercambio catiónico</h3>
   <p class="p">
     La capacidad de intercambio catiónico (CIC) es una medida que indica la cantidad de cargas
-negativas que se encuentran presentes en la superficie de los minerales y los componentes
-orgánicos del suelo, es decir, es una medida de la cantidad de cationes que estas superficies
-pueden retener e intercambiar (figura 6). Algunos de los cationes del suelo son K+, Ca2+, Mg2+, Na+, Al 3+, H+, NH4+, Fe2+, Mn2+, y Cu2+.
+    negativas que se encuentran presentes en la superficie de los minerales y los componentes
+    orgánicos del suelo, es decir, es una medida de la cantidad de cationes que estas superficies
+    pueden retener e intercambiar (figura 6). Algunos de los cationes del suelo son K+, Ca2+, Mg2+, Na+, Al 3+, H+, NH4+, Fe2+, Mn2+, y Cu2+.
   </p>
 
 </div>
